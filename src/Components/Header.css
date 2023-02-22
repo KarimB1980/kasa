@@ -1,0 +1,46 @@
+
+header {
+  display: flex;
+  flex-direction: row;
+  color: #FF6060;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header a {
+  color: #FF6060;
+  margin-left: 40px;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+#logo {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+#navigation {
+  display: flex;
+  flex-direction: row;
+}
+
+.Logologo {
+  margin-left: 5px;
+  margin-right: 5px;
+  vertical-align : sub;
+}
+
+.Slogo {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.Alogo {
+  margin-left: 5px;
+  margin-right: 5px;
+}

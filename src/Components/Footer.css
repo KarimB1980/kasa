@@ -1,0 +1,40 @@
+footer {
+  background-color: black;
+  height: 209px;
+  display: flex;
+  margin-top: 40px;
+}
+
+footer h2 {
+    font-weight: 300;
+    margin-top: 50px;
+}
+#logoEtMention {
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+}
+
+#logofooter {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: center;
+}
+  
+.Logofooter {
+  margin-left: 5px;
+  margin-right: 5px;
+  vertical-align : sub;
+}
+  
+.Sfooter {
+margin-left: 5px;
+margin-right: 5px;
+}
+
+.Afooter {
+margin-left: 5px;
+margin-right: 5px;
+}

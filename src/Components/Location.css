@@ -1,0 +1,16 @@
+.location {
+  height: 340px;
+  width: 340px;
+  border-radius: 10px;
+  background: linear-gradient(180deg, rgba(255, 96, 96, 1) 0%, rgba(100, 0, 0, 0.6) 100%);
+  display: flex;
+  align-items: end;
+  padding-left: 20px;
+  margin-bottom: 50px;
+}
+
+h2 {
+    align-items: end;
+    color: white;
+    font-weight: 500;
+}
