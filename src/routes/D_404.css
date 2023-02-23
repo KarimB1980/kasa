@@ -1,0 +1,38 @@
+#page-erreur-404 h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 288px;
+  display: flex;
+  align-items: center;
+  text-align: center;    
+  color: #FF6060;
+  margin-top: 0;
+  margin-bottom: 0;  
+}
+
+#principal h2 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FF6060;  
+}
+
+#retour {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  display: flex;
+  align-items: flex-end;
+  text-decoration-line: underline;   
+  color: #FF6060;
+}
+
+#principal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}

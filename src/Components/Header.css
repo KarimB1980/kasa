@@ -7,7 +7,7 @@ header {
   align-items: center;
 }
 
-header a {
+#navigation a {
   color: #FF6060;
   margin-left: 40px;
   font-size: 24px;
