@@ -1,16 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import Home from './routes/Home'
-import ErrorPage from './routes/D_404'
-import FicheLogement from './routes/Fiche-Logement'
-import APropos from './routes/A-Propos'
-
-
-
-import { createBrowserRouter, RouterProvider, } from "react-router-dom";
+import Home from './pages/Home'
+import ErrorPage from './pages/D_404'
+import FicheLogement from './pages/Fiche-Logement'
+import APropos from './pages/A-Propos'
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 
-const router = createBrowserRouter([
+const router =  createBrowserRouter([
   {
     path: "/",
     element: <Home />,
@@ -25,6 +22,7 @@ const router = createBrowserRouter([
     element: <APropos />,
   }
 ]);
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

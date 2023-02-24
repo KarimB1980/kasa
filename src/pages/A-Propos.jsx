@@ -1,3 +1,4 @@
+import React from 'react';
 import './A-Propos.css'
 
 export default function APropos() {

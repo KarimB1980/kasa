@@ -5,6 +5,9 @@ header {
   color: #FF6060;
   justify-content: space-between;
   align-items: center;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 30px;
 }
 
 #navigation a {
@@ -14,33 +17,20 @@ header {
   text-decoration: none;
 }
 
-header a:hover {
+#navigation a:hover {
   text-decoration: underline;
 }
 
 #logo {
-  display: flex;
-  flex-direction: row;
-  align-items: baseline;
+  background-image: url("../logos/logoheader.png");
+  width: 211px;
+  height: 68px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #navigation {
   display: flex;
   flex-direction: row;
-}
-
-.Logologo {
-  margin-left: 5px;
-  margin-right: 5px;
-  vertical-align : sub;
-}
-
-.Slogo {
-  margin-left: 5px;
-  margin-right: 5px;
-}
-
-.Alogo {
-  margin-left: 5px;
-  margin-right: 5px;
 }

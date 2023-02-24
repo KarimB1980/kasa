@@ -1,22 +1,25 @@
 import React from 'react'
 import DonneesJSON from '../datas/logements.json'
 
-  function AffichageDonnesJSON(){
-    const Logements=DonneesJSON.map(
-      (info)=>{
-        return(
-          <div className='location'>
-            <h2>{info.title}</h2>
+export default function AffichageDonneesJSON(){
+  const Logements=DonneesJSON.map(
+    (informations)=>{
+      return(
+        <div className='location'>
+          <div className='imagelocation'>
+            <img src={informations.cover} alt="imageLocation" />
           </div>
-        )
-      }
-    )
- 
-    return(
-      <div className='logements'>
-        {Logements}
-      </div>
-    )
-  }
- 
-export default AffichageDonnesJSON;
+          <div className='titrelocation'>
+            <h2>{informations.title}</h2>
+          </div>
+        </div>
+      )
+    }
+  )
+
+  return(
+    <div className='logements'>
+      {Logements}
+    </div>
+  )
+}
