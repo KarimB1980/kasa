@@ -3,12 +3,11 @@ import { useRouteError } from "react-router-dom";
 import './D_404.css'
 import '../components/Header.css'
 import '../components/Footer.css'
-
 import Header from '../components/Header';
 import Footer from '../components/Footer'
-
 import { Link } from "react-router-dom";
 
+// Création de la page d'erreur
 export default function ErrorPage() {
   const error = useRouteError();
   console.error(error);

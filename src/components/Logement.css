@@ -1,4 +1,4 @@
-.location {
+.logement {
   height: 340px;
   width: 340px;
   border-radius: 10px;
@@ -8,7 +8,7 @@
   position:relative;
 }
 
-.location h2 {
+.logement h2 {
   align-items: end;
   color: white;
   font-weight: 500;
@@ -21,7 +21,7 @@
   padding-bottom: 20px;
 }
 
-.location img {
+.logement img {
   position:absolute;
   z-index: 1;
   height: 340px;

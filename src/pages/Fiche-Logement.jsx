@@ -1,8 +1,7 @@
-//import { useState } from 'react'
-//import reactLogo from '../assets/react.svg'
 import React from 'react';
 import './Fiche-Logement.css'
 
+// Création de la page de détail d'un logement
 export default function FicheLogement() {
   return (
     <div className="FicheLogement">
@@ -10,4 +9,3 @@ export default function FicheLogement() {
     </div>
   )
 }
-
