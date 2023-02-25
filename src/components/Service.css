@@ -24,6 +24,10 @@
   margin-bottom: -10px;
 }
 
+.bouton:hover {
+  cursor: pointer;
+}
+
 .texte {
   padding-top: 36px;
   padding-right: 18px;
