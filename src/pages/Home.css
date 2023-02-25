@@ -9,8 +9,8 @@
   border-radius: 25px;
   margin-top: 40px;
   margin-bottom: 40px;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 #titre h1 {
@@ -35,6 +35,6 @@ section {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
 }

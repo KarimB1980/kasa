@@ -4,8 +4,8 @@ import Home from './pages/Home'
 import ErrorPage from './pages/D_404'
 import FicheLogement from './pages/Fiche-Logement'
 import APropos from './pages/A-Propos'
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import "./index.css";
+import { createBrowserRouter, RouterProvider } from "react-router-dom"
+import "./index.css"
 
 const router =  createBrowserRouter([
   {
@@ -22,7 +22,6 @@ const router =  createBrowserRouter([
     element: <APropos />,
   }
 ]);
-
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

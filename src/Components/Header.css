@@ -5,9 +5,9 @@ header {
   color: #FF6060;
   justify-content: space-between;
   align-items: center;
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-top: 30px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 40px;
 }
 
 #navigation a {
