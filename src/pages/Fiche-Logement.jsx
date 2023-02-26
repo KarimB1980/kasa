@@ -6,10 +6,12 @@ import '../components/Footer.css'
 import '../components/Logement.css'
 import '../components/Carroussel.css'
 import '../components/Tag.css'
+import '../components/Description.css'
 import Header from '../components/Header';
 import Footer from '../components/Footer'
 import Carroussel from '../components/Carroussel'
-import Tag from '../components/Tag';
+import Tag from '../components/Tag'
+import Description from '../components/Description'
 import EtoilePleine from '../rating/EtoilePleine.png'
 import EtoileVide from '../rating/EtoileVide.png'
 
@@ -111,6 +113,8 @@ export default function FicheLogement() {
         <Tag/>
         <Notation/>
       </div>
+
+      <Description/>
 
       <Footer/>
     </div>
