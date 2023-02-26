@@ -8,17 +8,25 @@
   position:relative;
 }
 
-.logement h2 {
+.titrelogement h2 {
   align-items: end;
   color: white;
   font-weight: 500;
   position:absolute;
-  top:250px;
+  top: 268px;
   width:300px; 
   z-index:2;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 20px;
+  height: 40px;
+  text-overflow:ellipsis;
+  overflow:hidden;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+  margin: 0;
 }
 
 .logement img {

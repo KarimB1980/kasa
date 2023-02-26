@@ -1,0 +1,54 @@
+#descriptionlogement {
+  background-color: white;
+  margin-right: 100px;
+  margin-left: 100px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#descriptionlogement h1 {
+  color: #FF6060;
+  font-weight: 500;
+  font-size: 36px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#photonom h2 {
+  color: #FF6060;
+  font-weight: 500;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+#locationlogement {
+  color: #FF6060;
+  font-weight: 500;
+  font-size: 18px;
+  margin-top: 0;
+}
+
+#titrelocationphotonom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#photonom {
+  display: flex;
+  flex-direction: row;
+}
+
+#photonom img {
+  width: 64px;
+  height: 64px;
+  border-radius: 32px;
+}
+
+#photonom h2 {
+  width: 100px;
+  text-align: right;
+  display: flex;
+  margin-right: 10px;
+}

@@ -2,6 +2,7 @@ import React from 'react'
 import DonneesJSON from '../datas/logements.json'
 import { Link } from "react-router-dom";
 
+// Affichage des cartes des logements
 export default function AffichageDonneesJSON(){
   const Logements=DonneesJSON.map(
     (informations)=>{

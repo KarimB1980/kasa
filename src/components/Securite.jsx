@@ -1,5 +1,6 @@
 import React from 'react'
 
+// Création du menu déroulant Sécurité
 export default function Securite() {
   class SecuriteAffichageMasquage extends React.Component {
     constructor(props) {

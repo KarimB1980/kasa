@@ -1,5 +1,6 @@
 import React from 'react'
 
+// Création du menu déroulant Respect
 export default function Respect() {
   class RespectAffichageMasquage extends React.Component {
     constructor(props) {

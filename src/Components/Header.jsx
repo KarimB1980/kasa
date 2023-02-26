@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 
-
+// Création de l'en-tête
 export default function Header() {
   return (
     <header>

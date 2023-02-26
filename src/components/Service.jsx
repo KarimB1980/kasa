@@ -1,5 +1,6 @@
 import React from 'react'
 
+// Création du menu déroulant Service
 export default function Service() {
   class ServiceAffichageMasquage extends React.Component {
     constructor(props) {

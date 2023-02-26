@@ -1,5 +1,6 @@
 import React from 'react'
 
+// Création du menu déroulant Fiabilité
 export default function Fiabilite() {
   class FiabiliteAffichageMasquage extends React.Component {
     constructor(props) {
