@@ -37,7 +37,7 @@ export default function Respect() {
     }
   }
 
-  function TextAffiche(props) {
+  function TextAffiche() {
     return (
       <div className='texte'>
         La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme.
@@ -45,7 +45,7 @@ export default function Respect() {
     )
   }
 
-  function TextMasque(props) {
+  function TextMasque() {
     return (
       <div className='rien'>
       </div>
@@ -62,13 +62,13 @@ export default function Respect() {
 
   function BoutonAffichageTexte(props) {
     return (
-      <button onClick={props.onClick} id="boutonrespect" class="bouton"> Respect <em class="fa fa-angle-down"></em></button>
+      <button onClick={props.onClick} id="boutonrespect" className='bouton'> Respect <em className='fa fa-angle-down'></em></button>
     );
   }
 
   function BoutonMasquageTexte(props) {
     return (
-      <button onClick={props.onClick} id="boutonrespect" class="bouton"> Respect <em class="fa fa-angle-up"></em></button>
+      <button onClick={props.onClick} id="boutonrespect" className='bouton'> Respect <em className='fa fa-angle-up'></em></button>
     );
   }
 

@@ -37,7 +37,7 @@ export default function Securite() {
     }
   }
 
-  function TextAffiche(props) {
+  function TextAffiche() {
     return (
       <div className='texte'>
         La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes.
@@ -45,7 +45,7 @@ export default function Securite() {
     )
   }
 
-  function TextMasque(props) {
+  function TextMasque() {
     return (
       <div className='rien'>
       </div>
@@ -62,13 +62,13 @@ export default function Securite() {
 
   function BoutonAffichageTexte(props) {
     return (
-      <button onClick={props.onClick} id="boutonsecurite" class="bouton"> Sécurité <em class="fa fa-angle-down"></em></button>
+      <button onClick={props.onClick} id="boutonsecurite" className='bouton'> Sécurité <em className='fa fa-angle-down'></em></button>
     );
   }
 
   function BoutonMasquageTexte(props) {
     return (
-      <button onClick={props.onClick} id="boutonsecurite" class="bouton"> Sécurité <em class="fa fa-angle-up"></em></button>
+      <button onClick={props.onClick} id="boutonsecurite" className='bouton'> Sécurité <em className='fa fa-angle-up'></em></button>
     );
   }
 

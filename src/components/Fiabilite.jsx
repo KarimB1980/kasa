@@ -37,7 +37,7 @@ export default function Fiabilite() {
     }
   }
 
-  function TextAffiche(props) {
+  function TextAffiche() {
     return (
       <div className='texte'>
         Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes.
@@ -45,7 +45,7 @@ export default function Fiabilite() {
     )
   }
 
-  function TextMasque(props) {
+  function TextMasque() {
     return (
       <div className='rien'>
       </div>
@@ -62,13 +62,13 @@ export default function Fiabilite() {
 
   function BoutonAffichageTexte(props) {
     return (
-      <button onClick={props.onClick} id="boutonfiabilite" class="bouton"> Fiabilité <em class="fa fa-angle-down"></em></button>
+      <button onClick={props.onClick} id="boutonfiabilite" className='bouton'> Fiabilité <em className='fa fa-angle-down'></em></button>
     );
   }
 
   function BoutonMasquageTexte(props) {
     return (
-      <button onClick={props.onClick} id="boutonfiabilite" class="bouton"> Fiabilité <em class="fa fa-angle-up"></em></button>
+      <button onClick={props.onClick} id="boutonfiabilite" className='bouton'> Fiabilité <em className='fa fa-angle-up'></em></button>
     );
   }
 

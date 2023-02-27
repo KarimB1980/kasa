@@ -37,7 +37,7 @@ export default function Service() {
     }
   }
 
-  function TextAffiche(props) {
+  function TextAffiche() {
     return (
       <div className='texte'>
         Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite. N'hésitez pas à nous contacter si vous avez la moindre question.
@@ -45,7 +45,7 @@ export default function Service() {
     )
   }
 
-  function TextMasque(props) {
+  function TextMasque() {
     return (
       <div className='rien'>
       </div>
@@ -62,13 +62,13 @@ export default function Service() {
 
   function BoutonAffichageTexte(props) {
     return (
-      <button onClick={props.onClick} id="boutonservice" class="bouton"> Service <em class="fa fa-angle-down"></em></button>
+      <button onClick={props.onClick} id="boutonservice" className='bouton'> Service <em className='fa fa-angle-down'></em></button>
     );
   }
 
   function BoutonMasquageTexte(props) {
     return (
-      <button onClick={props.onClick} id="boutonservice" class="bouton"> Service <em class="fa fa-angle-up"></em></button>
+      <button onClick={props.onClick} id="boutonservice" className='bouton'> Service <em className='fa fa-angle-up'></em></button>
     );
   }
 

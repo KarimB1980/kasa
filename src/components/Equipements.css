@@ -1,10 +1,10 @@
-#description {
+#equipements {
   margin-top: 24px;
   position: relative;
   width: 47.5%;
 }
 
-#boutondescription {
+#boutonequipements {
   background: #FF6060;
   border-radius: 5px;
   width: 100%;
@@ -24,11 +24,11 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-#boutondescription:hover {
+#boutonequipements:hover {
   cursor: pointer;
 }
 
-.textedescription {
+.texteequipements {
   padding-top: 36px;
   padding-right: 18px;
   padding-bottom: 36px;

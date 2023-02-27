@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import Logements from '../datas/logements.json'
 import { useParams } from 'react-router-dom'
-import FlecheGauche from '../Boutons/FlecheGauche.png'
-import FlecheDroite from '../Boutons/FlecheDroite.png'
+import FlecheGauche from '../boutons/FlecheGauche.png'
+import FlecheDroite from '../boutons/FlecheDroite.png'
 
 const Carroussel = () => {
 

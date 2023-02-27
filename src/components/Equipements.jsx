@@ -2,26 +2,26 @@ import React from 'react'
 import Logements from '../datas/logements.json'
 import { useParams } from 'react-router-dom';
 
-// Création du menu déroulant Description
-export default function Description() {
+// Création du menu déroulant Equipements
+export default function Equipements() {
   // Récupération ID du cocktail  
   const { logementid } = useParams()
   // Récupération des informations du logement sélectionné 
   const ficheLogement = Logements.find(logement => logement.id === logementid);
 
-  class DescriptionAffichageMasquage extends React.Component {
+  class EquipementsAffichageMasquage extends React.Component {
     constructor(props) {
       super(props);
-      this.descriptionAffichage = this.descriptionAffichage.bind(this);
-      this.descriptionMasquage = this.descriptionMasquage.bind(this);
+      this.equipementsAffichage = this.equipementsAffichage.bind(this);
+      this.equipementsMasquage = this.equipementsMasquage.bind(this);
       this.state = {texteEstAffiche: false};
     }
 
-    descriptionAffichage() {
+    equipementsAffichage() {
       this.setState({texteEstAffiche: true});
     }
 
-    descriptionMasquage() {
+    equipementsMasquage() {
       this.setState({texteEstAffiche: false});
     }
 
@@ -30,13 +30,13 @@ export default function Description() {
       let button;
 
       if (texteEstAffiche) {
-        button = <BoutonMasquageTexte onClick={this.descriptionMasquage} />;
+        button = <BoutonMasquageTexte onClick={this.equipementsMasquage} />;
       } else {
-        button = <BoutonAffichageTexte onClick={this.descriptionAffichage} />;
+        button = <BoutonAffichageTexte onClick={this.equipementsAffichage} />;
       }
 
       return (
-        <div className='description'>
+        <div className='equipements'>
           {button}
           <Texte texteEstAffiche={texteEstAffiche} />
         </div>
@@ -44,10 +44,20 @@ export default function Description() {
     }
   }
 
+  const AffichageEquipements = ficheLogement.equipments.map(
+    (equipements)=>{
+      return(
+        <article className='equipement' key={equipements}>
+          {equipements}
+        </article>
+      )
+    }
+  )
+
   function TextAffiche() {
     return (
-      <div className='textedescription'>
-        {ficheLogement.description}
+      <div className='texteequipements'>
+        {AffichageEquipements}
       </div>
     )
   }
@@ -69,19 +79,19 @@ export default function Description() {
 
   function BoutonAffichageTexte(props) {
     return (
-      <button onClick={props.onClick} id="boutondescription" className='bouton'> Description <em className='fa fa-angle-down'></em></button>
+      <button onClick={props.onClick} id="boutonequipements" className='bouton'> Equipements <em className='fa fa-angle-down'></em></button>
     );
   }
 
   function BoutonMasquageTexte(props) {
     return (
-      <button onClick={props.onClick} id="boutondescription" className='bouton'> Description <em className='fa fa-angle-up'></em></button>
+      <button onClick={props.onClick} id="boutonequipements" className='bouton'> Equipements <em className='fa fa-angle-up'></em></button>
     );
   }
 
   return (
-    <div id='description'>
-      <DescriptionAffichageMasquage/>
+    <div id='equipements'>
+      <EquipementsAffichageMasquage/>
     </div>
   )
 }

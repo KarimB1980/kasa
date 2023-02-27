@@ -60,3 +60,10 @@
   margin-left: 100px;
   margin-right: 100px;
 }
+
+#descriptionequipements {
+  display: flex;
+  flex-direction: row;
+  margin-left: 100px;margin-right: 100px;
+  justify-content: space-between;
+}

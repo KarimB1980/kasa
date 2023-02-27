@@ -7,13 +7,15 @@ import '../components/Logement.css'
 import '../components/Carroussel.css'
 import '../components/Tag.css'
 import '../components/Description.css'
+import '../components/Equipements.css'
 import Header from '../components/Header';
 import Footer from '../components/Footer'
 import Carroussel from '../components/Carroussel'
 import Tag from '../components/Tag'
-import Description from '../components/Description'
 import EtoilePleine from '../rating/EtoilePleine.png'
 import EtoileVide from '../rating/EtoileVide.png'
+import Description from '../components/Description'
+import Equipements from '../components/Equipements'
 
 // Création de la page de détail d'un logement
 export default function FicheLogement() {
@@ -114,7 +116,10 @@ export default function FicheLogement() {
         <Notation/>
       </div>
 
-      <Description/>
+      <div id='descriptionequipements'>
+        <Description/>
+        <Equipements/>
+      </div>
 
       <Footer/>
     </div>

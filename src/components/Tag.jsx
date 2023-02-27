@@ -9,11 +9,10 @@ export default function Tag(){
   // Récupération des informations du logement sélectionné 
   const ficheLogement = Logements.find(logement => logement.id === logementid);
   const lengthTags = ficheLogement.tags;
-  console.log(lengthTags);
   const LogementsTag = lengthTags.map(
     (informations)=>{
       return(
-        <article className='tag'>
+        <article className='tag' key={informations}>
           <h3>{informations}</h3>
         </article>
       )
