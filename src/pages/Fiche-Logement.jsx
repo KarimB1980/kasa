@@ -94,34 +94,38 @@ export default function FicheLogement() {
     }
   }
 
-  return (
-    <div className="FicheLogement">
-      <Header/>
+  if (ficheLogement) {
+    return (
+      <div className="FicheLogement">
+        <Header/>
 
-      <Carroussel/>
+        <Carroussel/>
 
-      <section id="descriptionlogement">
-        <div id='titrelocationphotonom'>
-          <h1>{ficheLogement.title}</h1>
-          <div id='photonom'>
-            <h2>{ficheLogement.host.name}</h2>
-            <img src={ficheLogement.host.picture} alt="photoprofil"></img>
+        <section id="descriptionlogement">
+          <div id='titrelocationphotonom'>
+            <h1>{ficheLogement.title}</h1>
+            <div id='photonom'>
+              <h2>{ficheLogement.host.name}</h2>
+              <img src={ficheLogement.host.picture} alt="photoprofil"></img>
+            </div>
           </div>
+          <h2 id="locationlogement">{ficheLogement.location}</h2>
+        </section>
+
+        <div id='tagsnotation'>
+          <Tag/>
+          <Notation/>
         </div>
-        <h2 id="locationlogement">{ficheLogement.location}</h2>
-      </section>
 
-      <div id='tagsnotation'>
-        <Tag/>
-        <Notation/>
+        <div id='descriptionequipements'>
+          <Description/>
+          <Equipements/>
+        </div>
+
+        <Footer/>
       </div>
-
-      <div id='descriptionequipements'>
-        <Description/>
-        <Equipements/>
-      </div>
-
-      <Footer/>
-    </div>
-  )
+    )
+  } else {
+    window.location.replace('/*');
+  }
 }
