@@ -43,3 +43,22 @@
   position:relative;
   z-index: 1;
 }
+
+@media screen and (max-width: 768px) {
+  #service {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  .bouton {
+    height: 30px;
+    padding-left: 11px;
+    padding-right: 11px;
+    font-size: 13px;
+    margin-bottom: -10px;
+  }
+ 
+  .texte {
+    font-size: 12px;
+  }
+}
