@@ -14,7 +14,10 @@ export default function Home() {
       <Header/>
 
       <div id="titre">
-        <h1>Chez vous, partout et ailleurs</h1>
+        <h1>
+          Chez vous, 
+          partout et ailleurs
+        </h1>
       </div>
 
       <AffichageDonneesJSON/>

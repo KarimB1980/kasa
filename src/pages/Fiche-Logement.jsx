@@ -126,6 +126,6 @@ export default function FicheLogement() {
       </div>
     )
   } else {
-    window.location.replace('/*');
+    window.location.replace('/errorpage');
   }
 }
