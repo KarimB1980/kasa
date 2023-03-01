@@ -49,3 +49,16 @@
   justify-content: space-between;
   align-items: center;
 }
+
+@media screen and (max-width: 768px) {
+  #principal h1 {
+    font-size: 96px;
+  }
+  #principal h2 {
+    font-size: 18px;
+    width: 100%;
+  }
+  #principal a {
+    margin-top: 133px;
+  }
+}
