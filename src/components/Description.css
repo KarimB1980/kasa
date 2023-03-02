@@ -42,3 +42,22 @@
   position:relative;
   z-index: 1;
 }
+
+@media screen and (max-width: 768px) {
+  #description {
+    width: 100%;
+    margin-top: 0px;
+  }
+  #boutondescription {
+    height: 30px;
+    border-radius: 5px;
+    font-size: 13px;
+    padding-left: 11px;
+    padding-right: 11px;
+  }
+  .textedescription {
+    font-size: 12px;
+    padding-left: 11px;
+    padding-right: 11px;
+  }
+}

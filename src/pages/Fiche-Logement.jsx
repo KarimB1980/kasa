@@ -102,20 +102,22 @@ export default function FicheLogement() {
         <Carroussel/>
 
         <section id="descriptionlogement">
-          <div id='titrelocationphotonom'>
+          <div id='titrelocationtags'>
             <h1>{ficheLogement.title}</h1>
+            <h2 id="locationlogement">{ficheLogement.location}</h2>
+            <Tag/>
+          </div>
+
+          <div id='photonomnotation'>
             <div id='photonom'>
               <h2>{ficheLogement.host.name}</h2>
               <img src={ficheLogement.host.picture} alt="photoprofil"></img>
             </div>
+            <Notation/>
           </div>
-          <h2 id="locationlogement">{ficheLogement.location}</h2>
         </section>
 
-        <div id='tagsnotation'>
-          <Tag/>
-          <Notation/>
-        </div>
+
 
         <div id='descriptionequipements'>
           <Description/>

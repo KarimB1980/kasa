@@ -42,3 +42,21 @@
   position:relative;
   z-index: 1;
 }
+
+@media screen and (max-width: 768px) {
+  #equipements {
+    width: 100%;
+  }
+  #boutonequipements {
+    height: 30px;
+    border-radius: 5px;
+    font-size: 13px;
+    padding-left: 11px;
+    padding-right: 11px;
+  }
+  .texteequipements {
+    font-size: 12px;
+    padding-left: 11px;
+    padding-right: 11px;
+  }
+}

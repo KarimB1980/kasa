@@ -35,3 +35,28 @@ section {
   z-index: 1;
   cursor: pointer;
 }
+
+@media screen and (max-width: 768px) {
+  .carroussel {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 15px;
+    height: 255px;
+  }
+  .image {
+    height: 255px;
+    border-radius: 10px;
+  }
+  .right-arrow {
+    width: 11.67px;
+    height: 19.8px;
+    right: 5px;
+    top: 48%;
+  }
+  .left-arrow {
+    width: 11.67px;
+    height: 19.8px;
+    left: 5px;
+    top: 48%;
+  }
+}

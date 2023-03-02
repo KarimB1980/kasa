@@ -4,6 +4,9 @@
   margin-left: 100px;
   padding-top: 0;
   padding-bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 #descriptionlogement h1 {
@@ -28,13 +31,6 @@
   margin-top: 0;
 }
 
-#titrelocationphotonom {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
 #photonom {
   display: flex;
   flex-direction: row;
@@ -53,17 +49,83 @@
   margin-right: 10px;
 }
 
-#tagsnotation {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-left: 100px;
-  margin-right: 100px;
-}
-
 #descriptionequipements {
   display: flex;
   flex-direction: row;
-  margin-left: 100px;margin-right: 100px;
+  margin-left: 100px;
+  margin-right: 100px;
   justify-content: space-between;
+}
+
+#note {
+  margin-top: 15px;
+}
+
+.etoile-vide {
+  margin-left: 10px;
+}
+
+.etoile-pleine {
+  margin-left: 10px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  #titrelocationphotonom h1 {
+    font-size: 18px;
+  }
+  #descriptionlogement {
+    margin-left: 20px;
+    margin-right: 20px;
+    flex-direction: column;
+  }
+  #locationlogement {
+    font-size: 14px;
+  }
+  #descriptionequipements {
+    /*display: flex;*/
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  #photonomnotation {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .etoile-vide {
+    margin-left: 0px;
+    width: 15px;
+    height: 15px;
+    margin-right: 3px;
+  }
+  .etoile-pleine {
+    margin-left: 0px;
+    width: 15px;
+    height: 15px;
+    margin-right: 3px;
+  }
+  #photonom img {
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+  }
+  #photonom h2 {
+    width: 53px;
+    height: 33px;
+    font-size: 12px;
+    margin-right: 5px;
+    align-items: center ;
+  }
+  #photonom {
+    align-items: center;
+  }
+  #note {
+    margin-top: 0;
+  }
+  #titrelocationtags h1 {
+    font-size: 18px;
+  }
 }
