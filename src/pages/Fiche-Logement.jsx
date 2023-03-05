@@ -1,21 +1,19 @@
 import React from 'react';
 import './Fiche-Logement.css'
-import { useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom'
 import Logements from '../datas/logements.json'
 import '../components/Footer.css'
 import '../components/Logement.css'
 import '../components/Carroussel.css'
 import '../components/Tag.css'
-import '../components/Description.css'
-import '../components/Equipements.css'
-import Header from '../components/Header';
+import '../components/Dropdown.css'
+import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Carroussel from '../components/Carroussel'
 import Tag from '../components/Tag'
 import EtoilePleine from '../rating/EtoilePleine.png'
 import EtoileVide from '../rating/EtoileVide.png'
-import Description from '../components/Description'
-import Equipements from '../components/Equipements'
+import Dropdown from '../components/Dropdown'
 
 // Création de la page de détail d'un logement
 export default function FicheLogement() {
@@ -94,6 +92,16 @@ export default function FicheLogement() {
     }
   }
 
+  const AffichageEquipements = ficheLogement.equipments.map(
+    (equipements)=>{
+      return(
+        <article className='equipement' key={equipements}>
+          {equipements}
+        </article>
+      )
+    }
+  )
+
   if (ficheLogement) {
     return (
       <div className="FicheLogement">
@@ -120,8 +128,8 @@ export default function FicheLogement() {
 
 
         <div id='descriptionequipements'>
-          <Description/>
-          <Equipements/>
+          <Dropdown intitulé="Description" description={ficheLogement.description} />
+          <Dropdown intitulé="Equipements" description={AffichageEquipements} />
         </div>
 
         <Footer/>

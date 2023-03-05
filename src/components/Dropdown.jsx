@@ -1,20 +1,21 @@
 import React from 'react'
 
-// Création du menu déroulant Service
-export default function Service() {
-  class ServiceAffichageMasquage extends React.Component {
+// Création du menu déroulant Dropdown
+export default function Dropdown({intitulé, description}) {
+
+  class DropdownAffichageMasquage extends React.Component {
     constructor(props) {
       super(props);
-      this.serviceAffichage = this.serviceAffichage.bind(this);
-      this.serviceMasquage = this.serviceMasquage.bind(this);
+      this.dropdownAffichage = this.dropdownAffichage.bind(this);
+      this.dropdownMasquage = this.dropdownMasquage.bind(this);
       this.state = {texteEstAffiche: false};
     }
 
-    serviceAffichage() {
+    dropdownAffichage() {
       this.setState({texteEstAffiche: true});
     }
 
-    serviceMasquage() {
+    dropdownMasquage() {
       this.setState({texteEstAffiche: false});
     }
 
@@ -23,9 +24,9 @@ export default function Service() {
       let button;
 
       if (texteEstAffiche) {
-        button = <BoutonMasquageTexte onClick={this.serviceMasquage} />;
+        button = <BoutonMasquageTexte onClick={this.dropdownMasquage} />;
       } else {
-        button = <BoutonAffichageTexte onClick={this.serviceAffichage} />;
+        button = <BoutonAffichageTexte onClick={this.dropdownAffichage} />;
       }
 
       return (
@@ -40,7 +41,7 @@ export default function Service() {
   function TextAffiche() {
     return (
       <div className='texte'>
-        Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite. N'hésitez pas à nous contacter si vous avez la moindre question.
+        {description}
       </div>
     )
   }
@@ -62,19 +63,19 @@ export default function Service() {
 
   function BoutonAffichageTexte(props) {
     return (
-      <button onClick={props.onClick} id="boutonservice" className='bouton'> Service <em className='fa fa-angle-down'></em></button>
+      <button onClick={props.onClick} className="boutondropdown" id={intitulé} > {intitulé} <em className='fa fa-angle-down'></em></button>
     );
   }
 
   function BoutonMasquageTexte(props) {
     return (
-      <button onClick={props.onClick} id="boutonservice" className='bouton'> Service <em className='fa fa-angle-up'></em></button>
+      <button onClick={props.onClick} className="boutondropdown" id={intitulé} > {intitulé} <em className='fa fa-angle-up'></em></button>
     );
   }
 
   return (
-    <div id='service'>
-      <ServiceAffichageMasquage/>
+    <div className='dropdown'>
+      <DropdownAffichageMasquage/>
     </div>
   )
 }

@@ -1,12 +1,9 @@
-#securite {
+.boutondropdown {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 31px;
   position: relative;
-  max-width: 1024px;
-}
+  max-width: 1023px;
 
-.bouton {
   background: #FF6060;
   border-radius: 5px;
   width: 100%;
@@ -23,9 +20,10 @@
   position:relative;
   z-index: 2;
   margin-bottom: -10px;
+  margin-top: 31px;
 }
 
-.bouton:hover {
+.boutondropdown:hover {
   cursor: pointer;
 }
 
@@ -43,30 +41,21 @@
   color: #FF6060;
   position:relative;
   z-index: 1;
+  max-width: 987px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (max-width: 768px) {
-  #securite {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  
-  .bouton {
+  .boutondropdown {
     height: 30px;
     padding-left: 11px;
     padding-right: 11px;
     font-size: 13px;
     margin-bottom: -10px;
   }
- 
   .texte {
     font-size: 12px;
   }
 }
 
-@media screen and (min-width: 768.1px) and (max-width: 1440px) {
-  #securite {
-    margin-left: 208px;
-    margin-right: 208px;
-  }
-}
