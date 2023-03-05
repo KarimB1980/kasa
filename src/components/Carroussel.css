@@ -27,13 +27,22 @@ section {
   z-index: 1;
   cursor: pointer;
 }
-  
+
 .left-arrow {
   position: absolute;
   top: 45%;
   left: 32px;
   z-index: 1;
   cursor: pointer;
+}
+
+.numeroimagesurtotal {
+  position: absolute;
+  z-index: 1;
+  top: 85%;
+  left: 49%;
+  color: white;
+  font-size: 18px;
 }
 
 @media screen and (max-width: 768px) {
@@ -58,5 +67,8 @@ section {
     height: 19.8px;
     left: 5px;
     top: 48%;
+  }
+  .numeroimagesurtotal {
+    display: none;
   }
 }

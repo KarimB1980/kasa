@@ -15,8 +15,8 @@ export default function Home() {
 
       <div id="titre">
         <h1>
-          Chez vous, 
-          partout et ailleurs
+          <span>Chez vous, </span> 
+          <span>partout et ailleurs</span>
         </h1>
       </div>
 

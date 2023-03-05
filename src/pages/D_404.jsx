@@ -18,8 +18,8 @@ export default function ErrorPage() {
       <div id="principal">
         <h1>404</h1>
         <h2>
-          Oups! La page que 
-          vous demandez n'existe pas.
+          <span>Oups! La page que</span> 
+          <span>vous demandez n'existe pas.</span>
         </h2>
         <Link to="/">Retourner sur la page d'accueil</Link>
       </div>

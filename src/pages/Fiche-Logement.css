@@ -1,12 +1,13 @@
 #descriptionlogement {
   background-color: white;
-  margin-right: 100px;
-  margin-left: 100px;
+  margin-right: auto;
+  margin-left: auto;
   padding-top: 0;
   padding-bottom: 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  max-width: 1240px;
 }
 
 #descriptionlogement h1 {
@@ -15,6 +16,18 @@
   font-size: 36px;
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.tags {
+  display: flex;
+  flex-direction: row;
+}
+
+#photonomnotation {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
 }
 
 #photonom h2 {
@@ -127,5 +140,8 @@
   }
   #titrelocationtags h1 {
     font-size: 18px;
+  }
+  .tags {
+    flex-wrap: wrap;
   }
 }

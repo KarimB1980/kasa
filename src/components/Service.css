@@ -1,8 +1,9 @@
 #service {
-  margin-left: 208px;
-  margin-right: 208px;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 31px;
   position: relative;
+  max-width: 1024px;
 }
 
 .bouton {
@@ -60,5 +61,12 @@
  
   .texte {
     font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 768.1px) and (max-width: 1440px) {
+  #service {
+    margin-left: 208px;
+    margin-right: 208px;
   }
 }

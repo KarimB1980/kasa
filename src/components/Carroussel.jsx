@@ -26,23 +26,46 @@ const Carroussel = () => {
     return null;
   }
 
-  return (
-    <section className='carroussel'>
-      <img src={FlecheGauche} className='left-arrow' onClick={imagePrecedante} alt="flechegauche" />
-      <img src={FlecheDroite} className='right-arrow' onClick={imageSuivante} alt="flechedroite" />
-      {ficheLogement.pictures.map((photo, index) => {
-        return (
-          <div
-            className={index === current ? 'photo active' : 'photo'}
-            key={index}>
-            {index === current && (
-              <img src={photo} alt='imagelogement' className='image' />
-            )}
-          </div>
-        );
-      })}
-    </section>
-  );
+  if (ficheLogement.pictures.length!==1) {
+    return (
+      <section className='carroussel' >
+        <img src={FlecheGauche} className='left-arrow' onClick={imagePrecedante} alt="flechegauche" />
+        <img src={FlecheDroite} className='right-arrow' onClick={imageSuivante} alt="flechedroite" />
+        {ficheLogement.pictures.map((photo, index) => {
+          return (
+            <div
+              className={index === current ? 'photo active' : 'photo'}
+              key={index}>
+              {index === current && (
+                <img src={photo} alt='imagelogement' className='image' />
+              )} 
+              {index === current && (
+                <div className='numeroimagesurtotal'>{index+1}/{ficheLogement.pictures.length}</div>
+              )}
+            </div>
+          );
+        })}
+      </section>
+    );
+  } else {
+    return (
+      <section className='carroussel' >
+        <img src={FlecheGauche} className='left-arrow' onClick={imagePrecedante} alt="flechegauche" />
+        <img src={FlecheDroite} className='right-arrow' onClick={imageSuivante} alt="flechedroite" />
+        {ficheLogement.pictures.map((photo, index) => {
+          return (
+            <div
+              className={index === current ? 'photo active' : 'photo'}
+              key={index}>
+              {index === current && (
+                <img src={photo} alt='imagelogement' className='image' />
+              )}
+            </div>
+          );
+        })}
+      </section>
+    );
+  }
 };
 
 export default Carroussel;

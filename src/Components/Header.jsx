@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 // Création de l'en-tête
 export default function Header() {
@@ -8,8 +8,8 @@ export default function Header() {
       <div id="logo">
       </div>
       <nav id="navigation">
-        <Link to="/">Accueil</Link>
-        <Link to="/apropos">A Propos</Link>
+        <NavLink to="/" className={({ isActive }) => isActive ? 'active' : 'inactive'}>Accueil</NavLink>
+        <NavLink to="/apropos" className={({ isActive }) => isActive ? 'active' : 'inactive'}>A Propos</NavLink>
       </nav>
     </header>
   )
