@@ -71,4 +71,7 @@
   #contenuAPropos .dropdown {
     width: 100%;
   }
+  .dropdown .texte {
+    font-size: 24px;
+  }
 }
