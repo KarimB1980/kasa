@@ -30,7 +30,7 @@ export default function Dropdown({intitulé, description}) {
       }
 
       return (
-        <div>
+        <div className='dropdownbouton'>
           {button}
           <Texte texteEstAffiche={texteEstAffiche} />
         </div>

@@ -92,17 +92,17 @@ export default function FicheLogement() {
     }
   }
 
-  const AffichageEquipements = ficheLogement.equipments.map(
-    (equipements)=>{
-      return(
-        <article className='equipement' key={equipements}>
-          {equipements}
-        </article>
-      )
-    }
-  )
-
   if (ficheLogement) {
+    const AffichageEquipements = ficheLogement.equipments.map(
+      (equipements)=>{
+        return(
+          <article className='equipement' key={equipements}>
+            {equipements}
+          </article>
+        )
+      }
+    )
+    
     return (
       <div className="FicheLogement">
         <Header/>

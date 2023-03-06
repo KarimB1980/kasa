@@ -65,9 +65,10 @@
 #descriptionequipements {
   display: flex;
   flex-direction: row;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: auto;
+  margin-right: auto;
   justify-content: space-between;
+  max-width: 1240px;
 }
 
 #note {
@@ -229,6 +230,10 @@
 
 @media screen and (min-width: 768.1px) and (max-width: 1440px) {
   #descriptionlogement {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  #descriptionequipements {
     margin-left: 100px;
     margin-right: 100px;
   }
