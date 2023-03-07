@@ -1,11 +1,11 @@
-import React from 'react';
+import React from 'react'
 import './A-Propos.css'
 import '../components/Header.css'
 import '../components/Footer.css'
 import '../components/Dropdown.css'
-import Header from '../components/Header';
+import Header from '../components/Header'
 import Footer from '../components/Footer'
-import Dropdown from '../components/Dropdown';
+import Dropdown from '../components/Dropdown'
 
 // Création de la page A Propos
 export default function APropos() {

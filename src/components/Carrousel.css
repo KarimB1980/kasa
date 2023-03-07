@@ -7,8 +7,6 @@ section {
   position: relative;
   height: 415px;
   background-color: white;
-  /*margin-right: 100px;
-  margin-left: 100px;*/
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -16,8 +14,6 @@ section {
 .image {
   width: 100%;
   max-width: 1240px;
-  /*margin-left: auto;
-  margin-right: auto;*/
   height: 415px;
   object-fit: cover;
   border-radius: 25px;

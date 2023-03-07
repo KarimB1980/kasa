@@ -14,7 +14,6 @@
   font-style: normal;
   font-weight: 500;
   font-size: 36px;
-  /*display: flex;*/
   align-items: center;
   text-align: center;
   color: #FF6060;  
@@ -68,9 +67,6 @@
 
 @media screen and (min-width: 768.1px) and (max-width: 1440px) {
   #principal h2 {
-    /*font-size: 18px;
-    width: 100%;
-    justify-content: center;*/
     display: block;
     margin-left: 100px;
     margin-right: 100px;

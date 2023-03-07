@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom'
 import FlecheGauche from '../boutons/FlecheGauche.png'
 import FlecheDroite from '../boutons/FlecheDroite.png'
 
+// Création du carrousel
 const Carroussel = () => {
 
   // Récupération ID du cocktail  

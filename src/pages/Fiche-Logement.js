@@ -3,24 +3,24 @@ import './Fiche-Logement.css'
 import { useParams } from 'react-router-dom'
 import Logements from '../datas/logements.json'
 import '../components/Footer.css'
-import '../components/Logement.css'
-import '../components/Carroussel.css'
+import '../components/Logements.css'
+import '../components/Carrousel.css'
 import '../components/Tag.css'
 import '../components/Dropdown.css'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
-import Carroussel from '../components/Carroussel'
+import Carroussel from '../components/Carrousel'
 import Tag from '../components/Tag'
+import Dropdown from '../components/Dropdown'
 import EtoilePleine from '../rating/EtoilePleine.png'
 import EtoileVide from '../rating/EtoileVide.png'
-import Dropdown from '../components/Dropdown'
 
 // Création de la page de détail d'un logement
 export default function FicheLogement() {
-  // Récupération ID du cocktail  
+  // Récupération ID du cocktail
   const { logementid } = useParams()
-  // Récupération des informations du logement sélectionné 
-  const ficheLogement = Logements.find(logement => logement.id === logementid);
+  // Récupération des informations du logement sélectionné
+  const ficheLogement = Logements.find(logement => logement.id === logementid)
 
   // Fonction de notation du logement
   function Notation() {
@@ -92,6 +92,7 @@ export default function FicheLogement() {
     }
   }
 
+  // Si l'id du logement existe alors on affiche les détails du logement à l'écran
   if (ficheLogement) {
     const AffichageEquipements = ficheLogement.equipments.map(
       (equipements)=>{
@@ -102,7 +103,7 @@ export default function FicheLogement() {
         )
       }
     )
-    
+
     return (
       <div className="FicheLogement">
         <Header/>
@@ -125,8 +126,6 @@ export default function FicheLogement() {
           </div>
         </section>
 
-
-
         <div id='descriptionequipements'>
           <Dropdown intitulé="Description" description={ficheLogement.description} />
           <Dropdown intitulé="Equipements" description={AffichageEquipements} />
@@ -135,7 +134,8 @@ export default function FicheLogement() {
         <Footer/>
       </div>
     )
+  // Si l'id du logement n'existe pas, on affiche la page d'erreur 404   
   } else {
-    window.location.replace('/errorpage');
+    window.location.replace('/errorpage')
   }
 }

@@ -83,11 +83,6 @@
   margin-left: 10px;
 }
 
-
-
-/*----------------------------------------------------------------------*/
-
-/*#description {*/
 .dropdown {
   margin-top: 24px;
   position: relative;
@@ -95,7 +90,6 @@
 }
 
 #Description, #Equipements {
-/*#boutondescription {*/
   background: #FF6060;
   border-radius: 5px;
   width: 100%;
@@ -117,12 +111,10 @@
 }
 
 #Description:hover, #Equipements:hover {
-/*#boutondescription:hover {*/
   cursor: pointer;
 }
 
 .dropdown .texte {
-/*.textedescription {*/
   padding-top: 36px;
   padding-right: 18px;
   padding-bottom: 36px;
@@ -138,13 +130,11 @@
 }
 
 @media screen and (max-width: 768px) {
-  /*#description {*/
   .dropdown {  
     width: 100%;
     margin-top: 0px;
   }
   #Description, #Equipements {
-  /*#boutondescription {*/
     height: 30px;
     border-radius: 5px;
     font-size: 13px;
@@ -152,7 +142,6 @@
     padding-right: 11px;
   }
   .dropdown .texte {
-  /*.textedescription {*/
     font-size: 12px;
     padding-left: 11px;
     padding-right: 11px;
@@ -161,10 +150,6 @@
     margin-bottom: 20px;
   }
 }
-
-/*----------------------------------------------------------------------*/
-
-
 
 @media screen and (max-width: 768px) {
   #titrelocationphotonom h1 {
@@ -179,7 +164,6 @@
     font-size: 14px;
   }
   #descriptionequipements {
-    /*display: flex;*/
     flex-direction: column;
     margin-left: 20px;
     margin-right: 20px;

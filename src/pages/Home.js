@@ -2,10 +2,10 @@ import React from 'react';
 import './Home.css'
 import '../components/Header.css'
 import '../components/Footer.css'
-import '../components/Logement.css'
+import '../components/Logements.css'
 import Header from '../components/Header';
 import Footer from '../components/Footer'
-import AffichageDonneesJSON from '../components/Logement'
+import AffichageDonneesJSON from '../components/Logements'
 
 // Création de la page d'accueil
 export default function Home() {
