@@ -17,7 +17,7 @@ import EtoileVide from '../rating/EtoileVide.png'
 
 // Création de la page de détail d'un logement
 export default function FicheLogement() {
-  // Récupération ID du cocktail
+  // Récupération de l'ID du logement
   const { logementid } = useParams()
   // Récupération des informations du logement sélectionné
   const ficheLogement = Logements.find(logement => logement.id === logementid)
