@@ -64,13 +64,18 @@
 }
 
 @media screen and (min-width: 768.1px) and (max-width: 1440px) {
-  #descriptionequipements .dropdown {
-    width: 47.5%;
+  #descriptionequipements {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
   #contenuAPropos .dropdown {
     width: 100%;
   }
   .dropdown .texte {
     font-size: 24px;
+  }
+  .dropDown {
+    max-width: 600px;
   }
 }

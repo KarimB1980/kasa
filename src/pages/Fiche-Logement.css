@@ -71,18 +71,6 @@
   max-width: 1240px;
 }
 
-#note {
-  margin-top: 15px;
-}
-
-.etoile-vide {
-  margin-left: 10px;
-}
-
-.etoile-pleine {
-  margin-left: 10px;
-}
-
 .dropdown {
   margin-top: 24px;
   position: relative;
@@ -149,9 +137,6 @@
   .dropdown {
     margin-bottom: 20px;
   }
-}
-
-@media screen and (max-width: 768px) {
   #titrelocationphotonom h1 {
     font-size: 18px;
   }
@@ -174,18 +159,6 @@
     justify-content: space-between;
     align-items: center;
   }
-  .etoile-vide {
-    margin-left: 0px;
-    width: 15px;
-    height: 15px;
-    margin-right: 3px;
-  }
-  .etoile-pleine {
-    margin-left: 0px;
-    width: 15px;
-    height: 15px;
-    margin-right: 3px;
-  }
   #photonom img {
     width: 32px;
     height: 32px;
@@ -195,14 +168,10 @@
     width: 53px;
     height: 33px;
     font-size: 12px;
-    margin-right: 5px;
     align-items: center ;
   }
   #photonom {
     align-items: center;
-  }
-  #note {
-    margin-top: 0;
   }
   #titrelocationtags h1 {
     font-size: 18px;
