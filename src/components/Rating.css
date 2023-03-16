@@ -1,4 +1,4 @@
-#note {
+.notation {
   margin-top: 15px;
 }
 
@@ -13,7 +13,7 @@
     height: 15px;
     margin-right: 3px;
   }
-  #note {
+  .notation {
     margin-top: 0;
   }
 }
