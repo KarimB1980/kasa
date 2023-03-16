@@ -1,44 +1,31 @@
-import React from "react";
-import ReactStars from "react-rating-stars-component";
+import React from 'react';
+import './Rating.css'
 import Logements from '../datas/logements.json'
 import { useParams } from 'react-router-dom'
-import useMediaQuery from '@mui/material/useMediaQuery';
+import EtoilePleine from '../rating/EtoilePleine.png'
+import EtoileVide from '../rating/EtoileVide.png'
 
+// Création de la page de détail d'un logement
 export default function Notation() {
-  const matches = useMediaQuery('(min-width: 768.1px)')
-  if (matches) {
-  // Récupération ID du cocktail  
-    const { logementid } = useParams()
-    // Récupération des informations du logement sélectionné 
-    const ficheLogement = Logements.find(logement => logement.id === logementid);
-    return (
-      <ReactStars
-        count={5}
-        value={parseInt(ficheLogement.rating)}
-        edit={false}
-        size={40}
-        emptyIcon={<i className="far fa-star"></i>}
-        fullIcon={<i className="fa fa-star"></i>}
-        activeColor="#FF6060"
-        color="#E3E3E3"
-      />
-    )
-  } else {
-    // Récupération ID du cocktail
-    const { logementid } = useParams()
-    // Récupération des informations du logement sélectionné 
-    const ficheLogement = Logements.find(logement => logement.id === logementid);
-    return (
-      <ReactStars
-        count={5}
-        value={parseInt(ficheLogement.rating)}
-        edit={false}
-        size={20}
-        emptyIcon={<i className="far fa-star"></i>}
-        fullIcon={<i className="fa fa-star"></i>}
-        activeColor="#FF6060"
-        color="#E3E3E3"
-      />
-    )
+// Récupération de l'ID du logement
+const { logementid } = useParams()
+// Récupération des informations du logement sélectionné
+const ficheLogement = Logements.find(logement => logement.id === logementid)
+  let notation = [];
+  let EtoileRouge = true;
+  for (let index = 0; index < 5; index++) {
+    if(index === parseInt(ficheLogement.rating)) {
+      EtoileRouge = false;
+    }
+    if(EtoileRouge === true) {
+        notation.push(<img key={index} className="etoile" src={EtoilePleine} alt={`NotationLogement`}/>)
+    } else {
+        notation.push(<img key={index} className="etoile" src={EtoileVide} alt={`NotationLogement`}/>)
+    }
   }
+  return (
+    <div className="notation">
+        {notation}
+    </div>
+  )
 }

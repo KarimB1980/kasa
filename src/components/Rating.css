@@ -2,29 +2,18 @@
   margin-top: 15px;
 }
 
-span {
-  margin-left: 5px;
-  /*font-size: 40px;*/
-  line-height: 100%;
+.etoile {
+  margin-left: 10px;
 }
 
 @media screen and (max-width: 768px) {
+  .etoile {
+    margin-left: 0px;
+    width: 15px;
+    height: 15px;
+    margin-right: 3px;
+  }
   #note {
     margin-top: 0;
   }
-
-  span {
-    /*margin-left: 0px;
-    font-size: 25px;*/
-    margin-right: 2px;
-    margin-left: 0;
-  }
-
-  /*element {
-    font-size: 25px;
-  }
-
-  .fa-star {
-    font-size: 30px;
-  }*/
 }
