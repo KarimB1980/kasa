@@ -11,12 +11,10 @@ export default function Notation() {
     const { logementid } = useParams()
     // Récupération des informations du logement sélectionné 
     const ficheLogement = Logements.find(logement => logement.id === logementid);
-    console.log(ficheLogement.rating)
-    //render(
     return (
       <ReactStars
         count={5}
-        value={ficheLogement.rating}
+        value={parseInt(ficheLogement.rating)}
         edit={false}
         size={40}
         emptyIcon={<i className="far fa-star"></i>}
@@ -30,11 +28,10 @@ export default function Notation() {
     const { logementid } = useParams()
     // Récupération des informations du logement sélectionné 
     const ficheLogement = Logements.find(logement => logement.id === logementid);
-    console.log(ficheLogement.rating)
     return (
       <ReactStars
         count={5}
-        value={ficheLogement.rating}
+        value={parseInt(ficheLogement.rating)}
         edit={false}
         size={20}
         emptyIcon={<i className="far fa-star"></i>}
